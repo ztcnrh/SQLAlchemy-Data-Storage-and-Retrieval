@@ -10,7 +10,9 @@ In this exercise, I analyzed a given Hawaii climate database using SQLAlchemy, P
 * Practice using SQLAlchemy by performing complex queries and aggregations with functions such as filter(), group_by(), order_by(), func.avg(), etc.
 * Practice using Python Flask to build an application which interacts with a databased and the localhost to store and return desired data.
 
-## Analysis Highlights
+<hr>
+
+## Part 1 - Analysis Highlights
 
 **The tasks/analyses performed include but are not limited to:**
 * Precipitation Analysis
@@ -34,3 +36,26 @@ In this exercise, I analyzed a given Hawaii climate database using SQLAlchemy, P
 <img src=plots/temperature_analysis_2.png width="30%" alt="Historical Average-Min-Max Temperature within a Specific Date Range">
 
 <img src=plots/daily_rainfal_average.png width="90%" alt="Historical Temperature Daily Normals for a Specific Week">
+
+<br>
+
+## Part 2 - Flask API Routes Highlight
+
+Having completed the analyses, the next step was to design a Flask API based on the queries developed.
+
+**Below is what the API home route looks like:**
+
+------------------------
+
+Available Routes:
+
+/api/v1.0/precipitation
+/api/v1.0/stations
+/api/v1.0/tobs
+
+/api/v1.0/start
+/api/v1.0/start/end
+
+*Please use "yyyy-mm-dd" as the date format to replace the "start" and/or "end" parameter(s) in the last two API routes in order to filter summarized temperature results based on desired date range:<br>
+The earliest date available in this dataset is 2010-01-01<br>
+The most recent date available in this dataset is 2017-08-23<br>
